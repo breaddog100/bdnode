@@ -16,7 +16,8 @@ function main_menu() {
         echo "106. Lava 一键部署"
         echo "107. Taiko 一键部署"
         echo "------------------挖矿类项目------------------"
-        echo "501. ORE(CPU) 挖矿脚本"
+        echo "501. ORE(CPU) 挖矿脚本[已停用]"
+        echo "502. ORE(GPU) 挖矿脚本[已停用]"
         echo "--------------------其他--------------------"
         echo "0. 退出脚本exit"
         read -p "请输入选项: " OPTION
@@ -31,6 +32,7 @@ function main_menu() {
         102) wget -O taiko.sh https://raw.githubusercontent.com/breaddog100/taiko/main/taiko-v1.0.sh && chmod +x taiko.sh && ./taiko.sh ;;
         
         501) wget -O ore.sh https://raw.githubusercontent.com/breaddog100/ore/main/ore.sh && chmod +x ore.sh && ./ore.sh ;;
+        501) wget -O ore-gpu.sh https://raw.githubusercontent.com/breaddog100/ore/main/ore-gpu.sh && chmod +x ore-gpu.sh && ./ore-gpu.sh ;;
         
         0) echo "退出脚本。"; exit 0 ;;
 	    *) echo "无效选项，请重新输入。"; sleep 3 ;;

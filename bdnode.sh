@@ -5,7 +5,7 @@ function main_menu() {
     while true; do
         clear
         echo "=========两岸猿声啼不住，轻舟已过万重山。========="
-    	echo "项目一键部署脚本，电报群：https://t.me/breaddog"
+    	echo "沟通电报群：https://t.me/lumaogogogo"
         echo "请选择项目:"
         echo "--------------------节点类项目--------------------"
         echo "101. Babylon 一键部署"

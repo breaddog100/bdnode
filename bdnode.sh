@@ -14,8 +14,9 @@ function main_menu() {
         echo "104. Aligned Layer一键部署"
         echo "105. Fuel 一键部署"
         echo "106. Lava 一键部署"
-        echo "107. Taiko 一键部署"
+        echo "107. Taiko 一键部署(5月10日停止)"
         echo "108. Privasea 一键部署"
+        echo "109. Taiko Hekla 一键部署"
         echo "--------------------挖矿类项目--------------------"
         echo "501. ORE(CPU) -v1 挖矿脚本[已停用]"
         echo "502. ORE(GPU) -v1 挖矿脚本[已停用]"
@@ -32,6 +33,7 @@ function main_menu() {
         106) wget -O Lava.sh https://raw.githubusercontent.com/breaddog100/lava/main/lava-v1.0.sh && chmod +x Lava.sh && ./Lava.sh ;;
         107) wget -O taiko.sh https://raw.githubusercontent.com/breaddog100/taiko/main/taiko-v1.0.sh && chmod +x taiko.sh && ./taiko.sh ;;
         108) wget -O Privasea.sh https://raw.githubusercontent.com/breaddog100/privasea/main/Privasea.sh && chmod +x Privasea.sh && ./Privasea.sh ;;
+        109) wget -O taiko-hekla.sh https://raw.githubusercontent.com/breaddog100/taiko/main/taiko-hekla.sh && chmod +x taiko-hekla.sh && ./taiko-hekla.sh ;;
         
         501) wget -O ore.sh https://raw.githubusercontent.com/breaddog100/ore/main/ore.sh && chmod +x ore.sh && ./ore.sh ;;
         501) wget -O ore-gpu.sh https://raw.githubusercontent.com/breaddog100/ore/main/ore-gpu.sh && chmod +x ore-gpu.sh && ./ore-gpu.sh ;;

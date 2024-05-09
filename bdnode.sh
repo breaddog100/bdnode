@@ -39,7 +39,7 @@ function main_menu() {
         109) wget -O taiko-hekla.sh https://raw.githubusercontent.com/breaddog100/taiko/main/taiko-hekla.sh && chmod +x taiko-hekla.sh && ./taiko-hekla.sh ;;
         110) wget -O titan-network.sh https://raw.githubusercontent.com/breaddog100/titan-network/main/titan-network.sh && chmod +x titan-network.sh && ./titan-network.sh ;;
         111) wget -O Artela.sh https://raw.githubusercontent.com/breaddog100/artela/main/Artela.sh && chmod +x Artela.sh && ./Artela.sh ;;
-        112) wget -O Artela.sh https://raw.githubusercontent.com/breaddog100/artela/main/Artela.sh && chmod +x Artela.sh && ./Artela.sh ;;
+        112) wget -O tanssinetwork.sh https://raw.githubusercontent.com/breaddog100/tanssi/main/tanssinetwork.sh && chmod +x tanssinetwork.sh && ./tanssinetwork.sh ;;
         
         501) wget -O ore.sh https://raw.githubusercontent.com/breaddog100/ore/main/ore.sh && chmod +x ore.sh && ./ore.sh ;;
         501) wget -O ore-gpu.sh https://raw.githubusercontent.com/breaddog100/ore/main/ore-gpu.sh && chmod +x ore-gpu.sh && ./ore-gpu.sh ;;

@@ -9,7 +9,7 @@ function main_menu() {
         echo "请选择项目:"
         echo "--------------------节点类项目--------------------"
         echo "101. Babylon 一键部署"
-        echo "102. 0gAI 一键部署"
+        echo "102. 0gAI v2.0 一键部署"
         echo "103. Nimble(GPU) 一键部署"
         echo "104. Aligned Layer一键部署"
         echo "105. Fuel 一键部署"
@@ -33,11 +33,11 @@ function main_menu() {
 
         case $OPTION in
         101) wget -O Babylon.sh https://raw.githubusercontent.com/breaddog100/babylon/main/babylon-1.1.sh && chmod +x Babylon.sh && ./Babylon.sh ;;
-        102) wget -O 0gai.sh https://raw.githubusercontent.com/breaddog100/0gai/main/0gai.sh && chmod +x 0gai.sh && ./0gai.sh ;;
+        102) wget -O 0gai.sh https://raw.githubusercontent.com/breaddog100/0gai/main/0gai_v2.sh && chmod +x 0gai.sh && ./0gai.sh ;;
         103) wget -O Nimble.sh https://raw.githubusercontent.com/breaddog100/nimble/main/nimble.sh && chmod +x Nimble.sh && ./Nimble.sh ;;
         104) wget -O Alignedlayer.sh https://raw.githubusercontent.com/breaddog100/AlignedLayer/main/Alignedlayer.sh && chmod +x Alignedlayer.sh && ./Alignedlayer.sh ;;
         105) wget -O Fuel.sh https://raw.githubusercontent.com/breaddog100/fuel/main/fuel-v1.0.sh&& chmod +x Fuel.sh && ./Fuel.sh ;;
-        106) wget -O Lava.sh https://raw.githubusercontent.com/breaddog100/lava/main/lava-v1.0.sh && chmod +x Lava.sh && ./Lava.sh ;;
+        106) wget -O Lava.sh https://raw.githubusercontent.com/breaddog100/lava/main/lava.sh && chmod +x Lava.sh && ./Lava.sh ;;
         108) wget -O Privasea.sh https://raw.githubusercontent.com/breaddog100/privasea/main/Privasea.sh && chmod +x Privasea.sh && ./Privasea.sh ;;
         109) wget -O taiko-hekla.sh https://raw.githubusercontent.com/breaddog100/taiko/main/taiko-hekla.sh && chmod +x taiko-hekla.sh && ./taiko-hekla.sh ;;
         111) wget -O Artela.sh https://raw.githubusercontent.com/breaddog100/artela/main/Artela.sh && chmod +x Artela.sh && ./Artela.sh ;;

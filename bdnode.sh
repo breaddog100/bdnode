@@ -8,7 +8,6 @@ function main_menu() {
     	echo "沟通电报群：https://t.me/lumaogogogo"
         echo "请选择项目:"
         echo "--------------------节点类项目--------------------"
-        echo "101. Babylon 一键部署"
         echo "102. 0gAI v2.0 一键部署"
         echo "103. Nimble(GPU) 一键部署"
         echo "104. Aligned Layer一键部署"
@@ -20,6 +19,7 @@ function main_menu() {
         echo "112. Tanssi Network 一键部署"
         echo "113. Quilibrium Network 一键部署"
         echo "114. Initia 一键部署"
+        echo "115. HyperLane 一键部署"
         echo "--------------------挖矿类项目--------------------"
         echo "503. Spectre(CPU) 一键挖矿"
         echo "110. Titan Network 一键挖矿"
@@ -27,12 +27,13 @@ function main_menu() {
         echo "107. Taiko 一键部署[已停用]"
         echo "501. ORE(CPU) -v1 挖矿脚本[已停用]"
         echo "502. ORE(GPU) -v1 挖矿脚本[已停用]"
+        echo "101. Babylon 一键部署"
         echo "-----------------------其他----------------------"
         echo "0. 退出脚本exit"
         read -p "请输入选项: " OPTION
 
         case $OPTION in
-        101) wget -O Babylon.sh https://raw.githubusercontent.com/breaddog100/babylon/main/babylon-1.1.sh && chmod +x Babylon.sh && ./Babylon.sh ;;
+        
         102) wget -O 0gai.sh https://raw.githubusercontent.com/breaddog100/0gai/main/0gai_v2.sh && chmod +x 0gai.sh && ./0gai.sh ;;
         103) wget -O Nimble.sh https://raw.githubusercontent.com/breaddog100/nimble/main/nimble.sh && chmod +x Nimble.sh && ./Nimble.sh ;;
         104) wget -O Alignedlayer.sh https://raw.githubusercontent.com/breaddog100/AlignedLayer/main/Alignedlayer.sh && chmod +x Alignedlayer.sh && ./Alignedlayer.sh ;;

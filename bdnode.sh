@@ -47,7 +47,7 @@ function main_menu() {
         113) wget -O quil.sh https://raw.githubusercontent.com/breaddog100/QuilibriumNetwork/main/quil.sh && chmod +x quil.sh && ./quil.sh ;;
         114) wget -O initia.sh https://raw.githubusercontent.com/breaddog100/Initia/main/initia.sh && chmod +x initia.sh && ./initia.sh ;;
         115) wget -O hyperlane.sh https://raw.githubusercontent.com/breaddog100/HyperLane/main/hyperlane.sh && chmod +x hyperlane.sh && ./hyperlane.sh ;;
-        116) wget -O analog.sh https://raw.githubusercontent.com/breaddog100/Analog/main/analog.sh && chmod +x analog.sh && ./analog.sh
+        116) wget -O analog.sh https://raw.githubusercontent.com/breaddog100/Analog/main/analog.sh && chmod +x analog.sh && ./analog.sh ;;
         
         503) wget -O spectre.sh https://raw.githubusercontent.com/breaddog100/spectre-network/main/spectre.sh && chmod +x spectre.sh && ./spectre.sh ;;
         110) wget -O titan-network.sh https://raw.githubusercontent.com/breaddog100/titan-network/main/titan-network.sh && chmod +x titan-network.sh && ./titan-network.sh ;;

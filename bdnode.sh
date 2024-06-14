@@ -22,6 +22,7 @@ function main_menu() {
         echo "115. HyperLane 一键部署"
         echo "116. Analog 一键部署"
         echo "117. Nubit 一键部署"
+        echo "118. Voi 一键部署"
         echo "--------------------挖矿类项目--------------------"
         echo "503. Spectre(CPU) 一键挖矿"
         echo "110. Titan Network 一键挖矿"
@@ -50,6 +51,7 @@ function main_menu() {
         115) wget -O hyperlane.sh https://raw.githubusercontent.com/breaddog100/HyperLane/main/hyperlane.sh && chmod +x hyperlane.sh && ./hyperlane.sh ;;
         116) wget -O analog.sh https://raw.githubusercontent.com/breaddog100/Analog/main/analog.sh && chmod +x analog.sh && ./analog.sh ;;
         117) wget -O nubit.sh https://raw.githubusercontent.com/breaddog100/Nubit/main/nubit.sh && chmod +x nubit.sh && ./nubit.sh ;;
+        118) wget -O voi.sh https://raw.githubusercontent.com/breaddog100/voi/main/voi.sh && chmod +x voi.sh && ./voi.sh ;;
         
         503) wget -O spectre.sh https://raw.githubusercontent.com/breaddog100/spectre-network/main/spectre.sh && chmod +x spectre.sh && ./spectre.sh ;;
         110) wget -O titan-network.sh https://raw.githubusercontent.com/breaddog100/titan-network/main/titan-network.sh && chmod +x titan-network.sh && ./titan-network.sh ;;

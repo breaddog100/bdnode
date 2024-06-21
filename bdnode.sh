@@ -8,7 +8,7 @@ function main_menu() {
     	echo "沟通电报群：https://t.me/lumaogogogo"
         echo "请选择项目:"
         echo "--------------------节点类项目--------------------"
-        echo "102. 0gAI v2.0 一键部署"
+        echo "102. 0gAI 一键部署"
         echo "103. Nimble(GPU) 一键部署"
         echo "104. Aligned Layer一键部署"
         echo "105. Fuel 一键部署"
@@ -39,7 +39,7 @@ function main_menu() {
 
         case $OPTION in
         
-        102) wget -O 0gai.sh https://raw.githubusercontent.com/breaddog100/0gai/main/0gai_v2.sh && chmod +x 0gai.sh && ./0gai.sh ;;
+        102) wget -O 0gai.sh https://raw.githubusercontent.com/breaddog100/0gai/main/0gai.sh && chmod +x 0gai.sh && ./0gai.sh ;;
         103) wget -O Nimble.sh https://raw.githubusercontent.com/breaddog100/nimble/main/nimble.sh && chmod +x Nimble.sh && ./Nimble.sh ;;
         104) wget -O Alignedlayer.sh https://raw.githubusercontent.com/breaddog100/AlignedLayer/main/Alignedlayer.sh && chmod +x Alignedlayer.sh && ./Alignedlayer.sh ;;
         105) wget -O Fuel.sh https://raw.githubusercontent.com/breaddog100/fuel/main/fuel-v1.0.sh&& chmod +x Fuel.sh && ./Fuel.sh ;;

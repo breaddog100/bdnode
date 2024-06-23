@@ -25,6 +25,7 @@ function main_menu() {
         echo "118. Voi 一键部署"
         echo "119. Aleo 一键部署"
         echo "120. Zora 一键部署"
+        echo "121. Airchains 一键部署"
         echo "--------------------挖矿类项目--------------------"
         echo "503. Spectre(CPU) 一键挖矿"
         echo "110. Titan Network 一键挖矿"
@@ -56,6 +57,7 @@ function main_menu() {
         118) wget -O voi.sh https://raw.githubusercontent.com/breaddog100/voi/main/voi.sh && chmod +x voi.sh && ./voi.sh ;;
         119) wget -O aleo.sh https://raw.githubusercontent.com/breaddog100/Aleo/main/aleo.sh && chmod +x aleo.sh && ./aleo.sh ;;
         120) wget -O zora.sh https://raw.githubusercontent.com/breaddog100/Zora/main/zora.sh && chmod +x zora.sh && ./zora.sh ;;
+        121) wget -O airchains.sh https://raw.githubusercontent.com/breaddog100/airchains/main/airchains.sh && chmod +x airchains.sh && ./airchains.sh ;;
         
         503) wget -O spectre.sh https://raw.githubusercontent.com/breaddog100/spectre-network/main/spectre.sh && chmod +x spectre.sh && ./spectre.sh ;;
         110) wget -O titan-network.sh https://raw.githubusercontent.com/breaddog100/titan-network/main/titan-network.sh && chmod +x titan-network.sh && ./titan-network.sh ;;

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20240731010
+current_version=20240731011
 
 # 指定URL
 update_url="https://raw.githubusercontent.com/breaddog100/bdnode/main/update.sh"
@@ -22,7 +22,6 @@ update_script() {
         printf "\033[31m脚本有新版本可用！当前版本：%s，最新版本：%s\033[0m\n" "$current_version" "$latest_version"
         mv $HOME/$tmp $HOME/$file_name
         chmod +x $HOME/$file_name
-        exit
         exec $HOME/$file_name
     else
         # 脚本是最新的

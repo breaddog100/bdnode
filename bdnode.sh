@@ -1,10 +1,50 @@
 #!/bin/bash
 
+# 设置版本号
+current_version=20240731002
+
+update_script() {
+    # 指定URL
+    update_url="https://raw.githubusercontent.com/breaddog100/bdnode/main/bdnode.sh"
+    file_name=$(basename "$update_url")
+
+    # 下载脚本文件
+    tmp=$(date +%s)
+    timeout 10s curl -s -o "$HOME/$tmp" -H "Cache-Control: no-cache" "$update_url?$tmp"
+    exit_code=$?
+    if [[ $exit_code -eq 124 ]]; then
+        echo "命令超时"
+        return 1
+    elif [[ $exit_code -ne 0 ]]; then
+        echo "下载失败"
+        return 1
+    fi
+
+    # 检查是否有新版本可用
+    latest_version=$(grep -oP 'current_version=([0-9]+)' $HOME/$tmp | sed -n 's/.*=//p')
+
+    if [[ "$latest_version" -gt "$current_version" ]]; then
+        clear
+        # 提示需要更新脚本
+        printf "\033[31m脚本有新版本可用！当前版本：%s，最新版本：%s\033[0m\n" "$current_version" "$latest_version"
+        echo "正在更新..."
+        sleep 3
+        mv $HOME/$tmp $HOME/$file_name
+        chmod +x $HOME/$file_name
+        exec "$HOME/$file_name"
+    else
+        # 脚本是最新的
+        rm -f $tmp
+    fi
+
+}
+
 # 主菜单
 function main_menu() {
     while true; do
         clear
         echo "=========两岸猿声啼不住，轻舟已过万重山。========="
+        echo "当前版本：$current_version"
     	echo "沟通电报群：https://t.me/lumaogogogo"
         echo "请选择项目:"
         echo "--------------------节点类项目--------------------"

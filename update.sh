@@ -1,14 +1,15 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20240731012
+current_version=20240731013
 
 # 指定URL
 update_url="https://raw.githubusercontent.com/breaddog100/bdnode/main/update.sh"
-file_name=$(basename "$update_url")
+
 
 # 定义函数
 update_script() {
+    file_name=$(basename "$update_url")
     # 下载脚本文件
     tmp=$(date +%s)
     curl -s -o $HOME/$tmp -H "Cache-Control: no-cache" "$update_url?$tmp"

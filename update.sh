@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # 设置版本号
-current_version="1.0.0"
+current_version=20240731001
 
 # 指定URL
-update_url="https://example.com/update_script.sh"
+update_url="https://raw.githubusercontent.com/breaddog100/bdnode/main/update.sh"
 
 # 定义函数
 update_script() {
@@ -12,7 +12,11 @@ update_script() {
     curl -sO "$update_url"
 
     # 检查是否有新版本可用
-    latest_version=$(grep -oP '(?<=current_version=")[^"]*' update_script.sh)
+    latest_version=$(grep -oP 'current_version=([0-9]+)' update_script.sh | sed -n 's/.*=//p')
+    
+    # 调试语句
+    echo "版本号：$current_version"
+
 
     if [[ "$latest_version" != "$current_version" ]]; then
         # 提示需要更新脚本

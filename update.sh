@@ -10,7 +10,7 @@ file_name=$(basename "$update_url")
 # 定义函数
 update_script() {
     # 下载脚本文件
-    tmp=(date +%s)
+    tmp=$(date +%s)
     curl -s -o $HOME/$tmp -H "Cache-Control: no-cache" "$update_url?$tmp"
 
 

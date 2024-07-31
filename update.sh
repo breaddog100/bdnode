@@ -22,7 +22,7 @@ update_script() {
         printf "\033[31m脚本有新版本可用！当前版本：%s，最新版本：%s\033[0m\n" "$current_version" "$latest_version"
         mv $HOME/$tmp $HOME/$file_name
         chmod +x $HOME/$file_name
-        exec $HOME/$file_name
+        exec "$HOME/$file_name"
     else
         # 脚本是最新的
         echo "脚本已是最新版本"

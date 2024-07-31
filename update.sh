@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20240731004
+current_version=20240731005
 
 # 指定URL
 update_url="https://raw.githubusercontent.com/breaddog100/bdnode/main/update.sh"
@@ -10,7 +10,7 @@ update_url="https://raw.githubusercontent.com/breaddog100/bdnode/main/update.sh"
 update_script() {
     # 下载脚本文件
     curl -sO -H "Cache-Control: no-cache" "$update_url"
-
+    
     # 检查是否有新版本可用
     latest_version=$(grep -oP 'current_version=([0-9]+)' update.sh | sed -n 's/.*=//p')
 
@@ -22,8 +22,6 @@ update_script() {
         echo "脚本已是最新版本"
     fi
 
-    # 删除下载的更新脚本文件
-    rm update.sh
 }
 
 # 调用函数

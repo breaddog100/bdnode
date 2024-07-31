@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20240731002
+current_version=20240731003
 
 update_script() {
     # 指定URL
@@ -25,6 +25,7 @@ update_script() {
 
     if [[ "$latest_version" -gt "$current_version" ]]; then
         clear
+        echo ""
         # 提示需要更新脚本
         printf "\033[31m脚本有新版本可用！当前版本：%s，最新版本：%s\033[0m\n" "$current_version" "$latest_version"
         echo "正在更新..."
@@ -114,6 +115,8 @@ function main_menu() {
     done
 }
 
-# 显示主菜单
+# 检查更新
 update_script
+
+# 显示主菜单
 main_menu

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20240731003
+current_version=20240731004
 
 # 指定URL
 update_url="https://raw.githubusercontent.com/breaddog100/bdnode/main/update.sh"
@@ -28,4 +28,3 @@ update_script() {
 
 # 调用函数
 update_script
-echo "test"

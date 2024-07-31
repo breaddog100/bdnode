@@ -115,4 +115,5 @@ function main_menu() {
 }
 
 # 显示主菜单
+update_script
 main_menu

@@ -14,7 +14,6 @@ update_script() {
     tmp=$(date +%s)
     curl -s -o $HOME/$tmp -H "Cache-Control: no-cache" "$update_url?$tmp"
 
-
     # 检查是否有新版本可用
     latest_version=$(grep -oP 'current_version=([0-9]+)' $HOME/$tmp | sed -n 's/.*=//p')
 

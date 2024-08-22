@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20240820001
+current_version=20240822001
 
 update_script() {
     # 指定URL
@@ -70,6 +70,7 @@ function main_menu() {
         echo "122. Allora 一键部署"
         echo "123. Voi swarm voi中继器一键部署"
         echo "124. Flock 一键部署"
+        echo "125. rivalz 一键部署"
         echo "--------------------挖矿类项目--------------------"
         echo "503. Spectre(CPU) 一键挖矿"
         echo "504. ORE(CPU) -v2 挖矿脚本"
@@ -106,6 +107,7 @@ function main_menu() {
         122) wget -O allora.sh https://raw.githubusercontent.com/breaddog100/Allora/main/allora.sh && chmod +x allora.sh && ./allora.sh ;;
         123) wget -O voi-swarm.sh https://raw.githubusercontent.com/breaddog100/voi/main/voi-swarm.sh && chmod +x voi-swarm.sh && ./voi-swarm.sh ;;
         124) wget -O flock.sh https://raw.githubusercontent.com/breaddog100/flock/main/flock.sh && chmod +x flock.sh && ./flock.sh ;;
+        125) wget -O rivalz.sh https://raw.githubusercontent.com/breaddog100/rivalz/main/rivalz.sh && chmod +x rivalz.sh && ./rivalz.sh ;;
 
         503) wget -O spectre.sh https://raw.githubusercontent.com/breaddog100/spectre-network/main/spectre.sh && chmod +x spectre.sh && ./spectre.sh ;;
         504) wget -O ore.sh https://raw.githubusercontent.com/breaddog100/ore/main/ore.sh && chmod +x ore.sh && ./ore.sh ;;

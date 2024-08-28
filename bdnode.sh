@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20240822001
+current_version=20240828001
 
 update_script() {
     # 指定URL
@@ -75,6 +75,8 @@ function main_menu() {
         echo "503. Spectre(CPU) 一键挖矿"
         echo "504. ORE(CPU) -v2 挖矿脚本"
         echo "110. Titan Network 一键挖矿"
+        echo "--------------------合约类项目--------------------"
+        echo "200. Titan Network 合约部署"
         echo "---------------------已停项目---------------------"
         echo "107. Taiko 一键部署[已停用]"
         echo "501. ORE(CPU) -v1 挖矿脚本[已停用]"
@@ -108,6 +110,8 @@ function main_menu() {
         123) wget -O voi-swarm.sh https://raw.githubusercontent.com/breaddog100/voi/main/voi-swarm.sh && chmod +x voi-swarm.sh && ./voi-swarm.sh ;;
         124) wget -O flock.sh https://raw.githubusercontent.com/breaddog100/flock/main/flock.sh && chmod +x flock.sh && ./flock.sh ;;
         125) wget -O rivalz.sh https://raw.githubusercontent.com/breaddog100/rivalz/main/rivalz.sh && chmod +x rivalz.sh && ./rivalz.sh ;;
+        
+        200) wget -O titan-contract.sh https://raw.githubusercontent.com/breaddog100/titan-network/main/titan-contract.sh && chmod +x titan-contract.sh && ./titan-contract.sh ;;
 
         503) wget -O spectre.sh https://raw.githubusercontent.com/breaddog100/spectre-network/main/spectre.sh && chmod +x spectre.sh && ./spectre.sh ;;
         504) wget -O ore.sh https://raw.githubusercontent.com/breaddog100/ore/main/ore.sh && chmod +x ore.sh && ./ore.sh ;;

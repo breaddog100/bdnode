@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20240828001
+current_version=20240915001
 
 update_script() {
     # 指定URL
@@ -71,6 +71,7 @@ function main_menu() {
         echo "123. Voi swarm voi中继器一键部署"
         echo "124. Flock 一键部署"
         echo "125. rivalz 一键部署"
+        echo "126. Elixir 一键部署"
         echo "--------------------挖矿类项目--------------------"
         echo "503. Spectre(CPU) 一键挖矿"
         echo "504. ORE(CPU) -v2 挖矿脚本"
@@ -110,6 +111,7 @@ function main_menu() {
         123) wget -O voi-swarm.sh https://raw.githubusercontent.com/breaddog100/voi/main/voi-swarm.sh && chmod +x voi-swarm.sh && ./voi-swarm.sh ;;
         124) wget -O flock.sh https://raw.githubusercontent.com/breaddog100/flock/main/flock.sh && chmod +x flock.sh && ./flock.sh ;;
         125) wget -O rivalz.sh https://raw.githubusercontent.com/breaddog100/rivalz/main/rivalz.sh && chmod +x rivalz.sh && ./rivalz.sh ;;
+        126) wget -O elixir.sh https://raw.githubusercontent.com/breaddog100/elixir/main/elixir.sh && chmod +x elixir.sh && ./elixir.sh ;;
         
         200) wget -O titan-contract.sh https://raw.githubusercontent.com/breaddog100/titan-network/main/titan-contract.sh && chmod +x titan-contract.sh && ./titan-contract.sh ;;
 

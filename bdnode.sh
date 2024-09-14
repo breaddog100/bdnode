@@ -71,7 +71,7 @@ function main_menu() {
         echo "123. Voi swarm voi中继器一键部署"
         echo "124. Flock 一键部署"
         echo "125. rivalz 一键部署"
-        echo "126. Elixir 一键部署"
+        echo "126. Elixir V3 一键部署"
         echo "--------------------挖矿类项目--------------------"
         echo "503. Spectre(CPU) 一键挖矿"
         echo "504. ORE(CPU) -v2 挖矿脚本"

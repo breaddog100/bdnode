@@ -72,6 +72,7 @@ function main_menu() {
         echo "124. Flock 一键部署"
         echo "125. rivalz 一键部署"
         echo "126. Elixir V3 一键部署"
+        echo "127. Vana 一键部署"
         echo "--------------------挖矿类项目--------------------"
         echo "503. Spectre(CPU) 一键挖矿"
         echo "504. ORE(CPU) -v2 挖矿脚本"
@@ -112,6 +113,7 @@ function main_menu() {
         124) wget -O flock.sh https://raw.githubusercontent.com/breaddog100/flock/main/flock.sh && chmod +x flock.sh && ./flock.sh ;;
         125) wget -O rivalz.sh https://raw.githubusercontent.com/breaddog100/rivalz/main/rivalz.sh && chmod +x rivalz.sh && ./rivalz.sh ;;
         126) wget -O elixir.sh https://raw.githubusercontent.com/breaddog100/elixir/main/elixir.sh && chmod +x elixir.sh && ./elixir.sh ;;
+        127) wget -O vana.sh https://raw.githubusercontent.com/breaddog100/vana/main/vana.sh && chmod +x vana.sh && ./vana.sh ;;
         
         200) wget -O titan-contract.sh https://raw.githubusercontent.com/breaddog100/titan-network/main/titan-contract.sh && chmod +x titan-contract.sh && ./titan-contract.sh ;;
 

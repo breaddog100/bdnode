@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置版本号
-current_version=20241018001
+current_version=20241106001
 
 update_script() {
     # 指定URL
@@ -74,6 +74,7 @@ function main_menu() {
         echo "126. Elixir V3 一键部署"
         echo "127. Vana 一键部署"
         echo "128. Hemi 一键部署"
+        echo "129. Nillion 一键部署"
         echo "--------------------挖矿类项目--------------------"
         echo "503. Spectre(CPU) 一键挖矿"
         echo "504. ORE(CPU) -v2 挖矿脚本"
@@ -116,7 +117,7 @@ function main_menu() {
         126) wget -O elixir.sh https://raw.githubusercontent.com/breaddog100/elixir/main/elixir.sh && chmod +x elixir.sh && ./elixir.sh ;;
         127) wget -O vana.sh https://raw.githubusercontent.com/breaddog100/vana/main/vana.sh && chmod +x vana.sh && ./vana.sh ;;
         128) wget -O hemi.sh https://raw.githubusercontent.com/breaddog100/hemi/main/hemi.sh && chmod +x hemi.sh && ./hemi.sh ;;
-        
+        129) wget -O nillion.sh https://raw.githubusercontent.com/breaddog100/nillion/main/nillion.sh && chmod +x nillion.sh && ./nillion.sh ;;
         200) wget -O titan-contract.sh https://raw.githubusercontent.com/breaddog100/titan-network/main/titan-contract.sh && chmod +x titan-contract.sh && ./titan-contract.sh ;;
 
         503) wget -O spectre.sh https://raw.githubusercontent.com/breaddog100/spectre-network/main/spectre.sh && chmod +x spectre.sh && ./spectre.sh ;;

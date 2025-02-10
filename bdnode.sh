@@ -75,6 +75,7 @@ function main_menu() {
         echo "127. Vana 一键部署"
         echo "128. Hemi 一键部署"
         echo "129. Nillion 一键部署"
+        echo "201. Pipe 一键部署"
         echo "--------------------挖矿类项目--------------------"
         echo "503. Spectre(CPU) 一键挖矿"
         echo "504. ORE(CPU) -v2 挖矿脚本"
@@ -119,6 +120,7 @@ function main_menu() {
         128) wget -O hemi.sh https://raw.githubusercontent.com/breaddog100/hemi/main/hemi.sh && chmod +x hemi.sh && ./hemi.sh ;;
         129) wget -O nillion.sh https://raw.githubusercontent.com/breaddog100/nillion/main/nillion.sh && chmod +x nillion.sh && ./nillion.sh ;;
         200) wget -O titan-contract.sh https://raw.githubusercontent.com/breaddog100/titan-network/main/titan-contract.sh && chmod +x titan-contract.sh && ./titan-contract.sh ;;
+        201) wget -O pipe.sh https://raw.githubusercontent.com/breaddog100/pipe/main/pipe.sh && chmod +x pipe.sh && ./pipe.sh ;;
 
         503) wget -O spectre.sh https://raw.githubusercontent.com/breaddog100/spectre-network/main/spectre.sh && chmod +x spectre.sh && ./spectre.sh ;;
         504) wget -O ore.sh https://raw.githubusercontent.com/breaddog100/ore/main/ore.sh && chmod +x ore.sh && ./ore.sh ;;
